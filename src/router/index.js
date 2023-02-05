@@ -19,6 +19,31 @@ const router = createRouter({
       name: "register",
       component: () => import("../views/RegisterView.vue"),
     },
+    {
+      path: "/product/:id",
+      name: "product",
+      component: () => import("../views/DetailView.vue"),
+    },
+    {
+      path: "/categories",
+      name: "categories",
+      component: () => import("../views/CategoriesView.vue"),
+    },
+    {
+      path: "/categories/:id",
+      name: "category-items",
+      component: () => import("../views/CategoryItems.vue"),
+    },
+    {
+      path: "/pricing",
+      name: "pricing",
+      component: () => import("../views/PricingView.vue"),
+    },
+    {
+      path: "/success",
+      name: "success",
+      component: () => import("../views/SuccessView.vue"),
+    },
   ],
 });
 
