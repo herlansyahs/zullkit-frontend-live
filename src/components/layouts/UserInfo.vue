@@ -8,12 +8,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="md:order-2">
+  <div class="flex items-center md:order-2 mb-2">
     <div class="flex items-center">
       <div class="mr-2 text-sm font-regular">Halo, {{ user.name }}</div>
       <button
         type="button"
-        class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+        class="flex mr-3 text-sm bg-indigo-50 rounded-full md:mr-0 focus:ring-4 focus:ring-indigo-500 dark:focus:ring-indigo-600"
         id="user-menu-button"
         aria-expanded="false"
         data-dropdown-toggle="dropdown"
